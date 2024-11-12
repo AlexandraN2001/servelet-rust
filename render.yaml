@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: rust-hola-mundo
+    env: rust
+    buildCommand: 'cargo build --release'
+    startCommand: './target/release/my_rust_web_app'
+    plan: free
